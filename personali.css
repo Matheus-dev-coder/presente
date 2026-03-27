@@ -165,14 +165,19 @@ body{
     }
 }
 @media (max-width: 768px){
-    .texto1{
-        font-size: 5vw;
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
     .card{
-        width: 50%;
+        width: 80%;
     }
-    .lado-direito{
-        width: 50%;
+    text1{
+        font-size: 24px;
+        margin-top: 20px;
+        background: linear-gradient(to bottom, white, transparent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
