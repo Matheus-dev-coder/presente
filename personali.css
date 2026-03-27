@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: #121212;
+    background-color: #d2691e;
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -44,7 +44,7 @@ body{
 }
 .letra{
     margin-top: 15px;
-    background: linear-gradient(to bottom, #3a2a00, #1a1a1a);
+    background: linear-gradient(to bottom, #d2691e, #1a1a1a);
     padding: 10px;
     border-radius: 10px;
 }
