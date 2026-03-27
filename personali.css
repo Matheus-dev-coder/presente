@@ -173,7 +173,7 @@ body{
     .card{
         width: 80%;
     }
-    text1{
+    .text1{
         font-size: 24px;
         margin-top: 20px;
         background: linear-gradient(to bottom, white, transparent);
