@@ -4,25 +4,87 @@
     padding: 0;
 }
 body{
-    background-color: wheat;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: white;
 }
-header > h1{
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.lado-direito{
+    width: 45%;
+    padding-left: 30px;
+}
+.card{
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 60px;
+    background-color: #181818;
+    border-radius: 12px;
+    padding: 15px;
+}
+.capa{
+    width: 100%;
+    border-radius: 12px;
+}
+.info{
     margin-top: 10px;
-    text-align: center;
 }
-header > p{
-    margin-top: 20px;
-    text-align: center;
+
+.info h2{
+    font-size: 18px;
+}
+
+.info p{
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.letra{
+    margin-top: 15px;
+    background: linear-gradient(to bottom, #3a2a00, #1a1a1a);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.letra h4{
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #d1d1d1;
+}
+
+.letra p{
+    font-size: 14px;
     font-weight: bold;
-    font-size: 0.5;
 }
-div.principal{
-    background-color: red;
-    width: 400px;
-    height:500px;
-    margin-left: 30px;
-    margin-top: 50px;
-    border-radius: 8px;
+.texto1{
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, white, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+.texto1{
+    opacity: 0;
+    transform: translateX(50px);
+    animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media (max-width: 768px){
+    .texto1{
+        font-size: 20px;
+    }
+
+    .card{
+        width: 200px;
+    }
 }
