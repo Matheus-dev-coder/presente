@@ -166,19 +166,35 @@ body{
 }
 @media (max-width: 768px){
     .container{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        
+        text-align:left;
     }
     .card{
-        width: 100%;
-        margin-right: 20px;
+        width: 70%;
+        
     }
-    .text1{
-        font-size: 22px;
-        line-height: 1.3;
-        color: white; /* VOLTA COR NORMAL */
+    .texto1{
+        font-size: 17px;
+        line-height: 1.4;
+        color: #b3b3b3; /* VOLTA COR NORMAL */
         -webkit-text-fill-color: white;
         background: none; /* REMOVE gradiente */
+        text-shadow: #181818 1px 5px 5px;
+    }
+    .container2{
+        text-align: left;
+    }
+    .card2{
+        width: 70%;
+    }
+    .texto2{
+        font-size: 17px;
+        line-height: 1.4;
+        counter-reset: #b3b3b3;
+        -webkit-text-fill-color: white;
+        background: none; /* REMOVE gradiente */
+        text-shadow: #181818 1px 5px 5px;
+        margin-left: 20px;
+        margin-bottom: 90px;
     }
 }
