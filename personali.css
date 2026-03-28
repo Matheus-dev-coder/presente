@@ -167,7 +167,7 @@ body{
 @media (max-width: 768px){
     
     .card{
-        width:300px;
+        width:450px;
         
     }
     .texto1{
@@ -190,6 +190,6 @@ body{
         background: none; /* REMOVE gradiente */
         text-shadow: #181818 1px 5px 5px;
         margin-left: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 }
