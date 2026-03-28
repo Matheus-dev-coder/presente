@@ -183,7 +183,8 @@ body{
         text-shadow: #181818 1px 5px 5px;
     }
     .lado-direito{
-        width: 30%;
+        width: 35%;
+        max-width: 160px;
     }
 
     .card2{
