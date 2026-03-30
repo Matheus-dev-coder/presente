@@ -73,6 +73,7 @@ body{
     font-weight: bold;
 }
 .texto1{
+    max-width: 100%;
     line-height: 1.2;
     color: white;
     font-size: 40px;
@@ -183,7 +184,7 @@ body{
         text-shadow: #181818 1px 5px 5px;
     }
     .lado-direito{
-        width: 30%;
+        width: 50%;
         max-width: none;
     }
 
