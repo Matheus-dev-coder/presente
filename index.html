@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="personali.css">
+    <link rel="shortcut icon" href="favc/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Presente..</title>
 </head>
 <body>
+    <header>
+        <h1>Para você</h1>
+        <h3>meu amorzinho ♡</h3>
+    </header>
  <div class="container">
     <div class="card">
 
@@ -65,8 +70,37 @@
             <p>De fato, esse detalhe é um dos que mais reparo em você e é realmente muito lindo.</p>
         </div>
     </div>
-
-
  </div>
+ <div class="container3">
+ <div class="artista-card">
+           <div class="banner">
+            <h2>My Angel</h2>
+           </div>
+
+           <diV class="info-nos">
+                 <div>
+                    <h3>Amo demais e:</h3>
+                    <p>vou te amar sempre...</p>
+                 </div>
+
+                  <button class="btn">Te amo.</button>
+           </diV>
+         
+    </div>
+ </div>
+ <audio id="musica" loop>
+    <source src="audio/Convert_v2_tiktok7578932434855546119.mp3" type="audio/mpeg">
+</audio>
+<footer class="rodape">
+    <p>Feito com ❤️ pra você</p>
+</footer>
+<script>
+window.addEventListener("load", () => {
+    const audio = document.getElementById("musica");
+    audio.play().catch(() => {
+        console.log("Autoplay bloqueado");
+    });
+});
+</script>
 </body>
 </html>

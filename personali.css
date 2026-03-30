@@ -4,10 +4,20 @@
     padding: 0;
 }
 body{
-    background-color: #d2691e;
+    background-image: url(imgs/fundo.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     color: white;
 }
+header{
+    background-color: #333333;
+    justify-items: center;
+    gap: 8px;
+    box-shadow: 0px 0px 4px black;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -38,10 +48,15 @@ body{
     background-color: #181818;
     border-radius: 12px;
     padding: 15px;
+    box-shadow: 1px 0px 4px 0px white;
 }
 .capa{
     width: 100%;
     border-radius: 12px;
+    transition: transform 0.2s;
+}
+.capa:hover{
+    transform: scale(1.02);
 }
 .info{
     margin-top: 10px;
@@ -57,7 +72,7 @@ body{
 }
 .letra{
     margin-top: 15px;
-    background: linear-gradient(to bottom, #d2691e, #1a1a1a);
+    background: linear-gradient(to bottom, #853d0a, #1a1a1a);
     padding: 10px;
     border-radius: 10px;
 }
@@ -98,6 +113,14 @@ body{
     background-color: #181818;
     border-radius: 12px;
     padding: 15px;
+    box-shadow: 1px 0px 4px 0px white;
+
+}
+.capa2{
+    transition: transform 0.2s;
+}
+.capa2:hover{
+     transform: scale(1.02);
 }
 .card2 > h1{
     text-align: center;
@@ -164,6 +187,86 @@ body{
     opacity: 0;
     transform: translateX(50px);
     animation: aparecer 1s ease forwards;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    
+}
+.artista-card{
+    margin-bottom: 20px;
+    margin-top: 100px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #181818;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 0px 4px 0px white;
+
+}
+.banner{
+    margin: 0;
+    height: 180px;
+    background-image: url("imgs/love4.jpg");
+    background-size: cover;
+    background-position: bottom ;
+    position: relative;
+    transition: transform 0.2s;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0,3);
+}
+.banner:hover{
+    transform: scale(1.02);
+}
+.banner > h2{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+}.info-nos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.info-nos > h3{
+    font-size: 20px;
+}
+.info-nos > p{
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.btn{
+    background: transparent;
+    border: 1px solid #b3b3b3;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn:hover{
+    border-color: white;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.rodape{
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+
+    color: #b3b3b3;
+    font-size: 14px;
 }
 @keyframes aparecer{
     to{
