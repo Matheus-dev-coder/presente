@@ -88,6 +88,9 @@ body{
     transform: translateX(50px);
     animation: aparecer 1s ease forwards;
 }
+.texto1 > strong{
+    color: #ffffff;
+}
 .card2{
     width: 350px;
     margin-top: 100px;
@@ -147,6 +150,7 @@ body{
     transition: 0.2s;
 }
 .texto2{
+    max-width: 100%;
     line-height: 1.2;
     color: white;
     font-size: 40px;
@@ -191,14 +195,20 @@ body{
     .card2{
         width: 70%;
     }
+
     .texto2{
-        font-size: 17px;
-        line-height: 1.4;
-        counter-reset: #b3b3b3;
+        text-align: right;
+        font-size: 15px;
+        line-height: 1.5;
+        word-break: normal;
+        color: #b3b3b3; /* VOLTA COR NORMAL */
         -webkit-text-fill-color: white;
         background: none; /* REMOVE gradiente */
         text-shadow: #181818 1px 5px 5px;
-        margin-left: 20px;
-        margin-bottom: 50px;
     }
+    .lado-esquerdo{
+        width: 50%;
+        max-width: none;
+    }
+
 }
