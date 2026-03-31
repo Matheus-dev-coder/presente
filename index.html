@@ -88,18 +88,26 @@
          
     </div>
  </div>
+ <footer class="rodape">
+    <p>Feito com ❤️ pra você</p>
+</footer>
+
  <audio id="musica" loop>
     <source src="audio/Convert_v2_tiktok7578932434855546119.mp3" type="audio/mpeg">
 </audio>
-<footer class="rodape">
-    <p>Feito com ❤️ pra você</p>
-</footer>
+
 <script>
-window.addEventListener("load", () => {
-    const audio = document.getElementById("musica");
-    audio.play().catch(() => {
-        console.log("Autoplay bloqueado");
-    });
+const audio = document.getElementById("musica");
+const btnPlay = document.querySelector(".play");
+
+btnPlay.addEventListener("click", () => {
+    if(audio.paused){
+        audio.play();
+        btnPlay.innerHTML = '<i class="ri-pause-fill"></i>';
+    } else {
+        audio.pause();
+        btnPlay.innerHTML = '<i class="ri-play-fill"></i>';
+    }
 });
 </script>
 </body>
