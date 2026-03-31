@@ -13,8 +13,7 @@ body{
     color: white;
 }
 header{
-    overflow: hidden;
-    position: sticky;
+    position: relative;
     display: flex;
     backdrop-filter: blur(5px);
     justify-content: center;
